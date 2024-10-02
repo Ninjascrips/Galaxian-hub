@@ -2370,12 +2370,12 @@ local CamShake = require(game.ReplicatedStorage.Util.CameraShaker)
 CamShake:Stop()
 
     HttpService = game:GetService("HttpService")
-    local i = "Sla Hub"
+    local i = "Galaxian Hub"
     local j = "-BloxFruit.json"
     local l = game.Players.LocalPlayer.Name .. j
     if Adel then
         HttpService = game:GetService("HttpService")
-        local i = "Sla Hub"
+        local i = "Galaxian Hub"
         local j = "-BloxFruit.json"
         local l = game.Players.LocalPlayer.Name .. j
     end
@@ -2510,7 +2510,7 @@ CamShake:Stop()
     end
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Galaxian Hub", HidePremium = false, IntroText = "", SaveConfig = true, ConfigFolder = "Sla Hub"})
+local Window = OrionLib:MakeWindow({Name = "Galaxian Hub", HidePremium = false, IntroText = "", SaveConfig = true, ConfigFolder = "GALAXIAN HUB"})
 
 OrionLib:MakeNotification({
 	Name = "Galaxian Hub",
@@ -2520,7 +2520,7 @@ OrionLib:MakeNotification({
 })
 
 OrionLib:MakeNotification({
-	Name = "Sla Hub",
+	Name = "Galaxian HUB",
 	Content = "Galaxian Hub",
 	Image = "rbxassetid://90592012634846",
 	Time = 25
@@ -2624,10 +2624,11 @@ local Section = W:AddSection({
     Name = "Update"
 })
 
-W:AddLabel("[+] Galaxian Hub is HERE!")
-W:AddLabel("[+] Best AutoFarm!")
-W:AddLabel("[+] Up and Growing")
-W:AddLabel("[+] Smooth")
+W:AddLabel("[+] Galaxian Hub Está aqui!")
+W:AddLabel("[+] Melhor AutoFarm!")
+W:AddLabel("[+] Crecendo e crescendo")
+W:AddLabel("[+] Conheça nosso discord abaixo!")
+W:AddLabel("[+] https://discord.gg/x3AayUhnMu")
 
 local Section = W:AddSection({
     Name = "Status"
@@ -2721,7 +2722,7 @@ local locallv = W:AddLabel("Level")
         Name = "Status Hack"
     })
     
-    local LevelFarmFarm W:AddLabel("Kaitun: Coming Soon")
+    local LevelFarmFarm W:AddLabel("Kaitun: Em breve")
     W:AddLabel("Config Save : Comming Son...")
     local Farmfast = W:AddLabel("Farm Fast : ❌")
     local Bypass = W:AddLabel("Bypass ❌")
@@ -3001,7 +3002,7 @@ ToggleFarm = M:AddToggle({
     Name = "Auto Farm",
     Default = false,
     Flag = "LevelFarm",
-    Save = true,
+    Save = false,
     Callback = function(Value)
         _G.AutoFarm = Value
         StopTween(_G.AutoFarm)
@@ -3317,7 +3318,7 @@ local Section = M:AddSection({
 M:AddParagraph("Kaitun/Cantay","Kaitun bản này đell khác gì bản kia.")
 
 M:AddToggle({
-    Name = "Kaitun[Ko có kill players]",
+    Name = "Kaitun[Não a jogadores mortos]",
     Default = false,
     Flag = "Kaitun",
     Save = true,
@@ -3382,33 +3383,33 @@ end)
 
 if World1 then
     M:AddDropdown({
-        Name = "Select Mobs",
+        Name = "Selecionar Mobs",
         Default = "",
         Options = {"Bandit","Monkey","Gorilla","Pirate","Brute","Desert Bandit","Desert Officer","Snow Bandit","Snowman","Chief Petty Officer","Sky Bandit","Dark Master","Prisoner", "Dangerous Prisoner","Toga Warrior","Gladiator","Military Soldier","Military Spy","Fishman Warrior","Fishman Commando","God's Guard","Shanda","Royal Squad","Royal Soldier","Galley Pirate ","Galley Captain"},
         Callback = function(Value)
-            SelectMonster = Value
+            SelecionarMonster = Value
         end    
     })
     end
     
     if World2 then
     M:AddDropdown({
-        Name = "Select Mobs",
+        Name = "Selecionar Mobs",
         Default = "",
         Options = {"Raider","Mercenary","Swan Pirate","Factory Staff","Marine Lieutenant","Marine Captain","Zombie","Vampire","Snow Trooper","Winter Warrior","Lab Subordinate","Horned Warrior","Magma Ninja","Lava Pirate","Ship Deckhand","Ship Engineer","Ship Steward","Ship Officer","Arctic Warrior","Snow Lurker","Sea Soldier","Water Fighter"},
         Callback = function(Value)
-            SelectMonster = Value
+            SelecionarMonster = Value
         end    
     }) 
     end
     
     if World3 then
     M:AddDropdown({
-        Name = "Select Mobs",
+        Name = "Selecionar Mobs",
         Default = "",
         Options = {"Pirate Millionaire","Dragon Crew Warrior","Dragon Crew Archer","Female Islander","Giant Islander","Marine Commodore","Marine Rear Admiral","Fishman Raider","Fishman Captain","Forest Pirate","Mythological Pirate","Jungle Pirate","Musketeer Pirate","Reborn Skeleton","Living Zombie","Demonic Soul","Posessed Mummy", "Peanut Scout", "Peanut President", "Ice Cream Chef", "Ice Cream Commander", "Cookie Crafter", "Cake Guard", "Baking Staff", "Head Baker", "Cocoa Warrior", "Chocolate Bar Battler", "Sweet Thief", "Candy Rebel", "Candy Pirate", "Snow Demon"},
         Callback = function(Value)
-            SelectMonster = Value
+            SelecionarMonster = Value
         end    
     }) 
     end
@@ -3441,7 +3442,7 @@ M:AddToggle({
     })
 
 TweenChest = M:AddToggle({
-        Name = "Auto Chest [MUP]",
+        Name = "Auto Chest [VOAR]",
         Default = false,
         Flag = "Auto Chest",
         Save = true,
@@ -3452,7 +3453,7 @@ TweenChest = M:AddToggle({
     })
 
     M:AddToggle({
-        Name = "Auto Chest[Bypass]",
+        Name = "Auto Chest[TP]",
         Default = false,
         Flag = "Auto Chest[Bypass]",
         Save = true,
@@ -3462,9 +3463,9 @@ TweenChest = M:AddToggle({
     })
 
 M:AddToggle({
-    Name = "Stop Only Dark Key or God's Chalice",
+    Name = "Pare apenas quendo encontrar Dark frag ou God`s Chalice",
     Default = false,
-    Flag = "Stop Only Dark Key or God's Chalice",
+    Flag = "Pare apenas quendo encontrar Dark frag ou God`s Chalice",
     Save = true,
     Callback = function(Value)
         _G.StopChest = Value
@@ -5547,7 +5548,7 @@ local Section = SV:AddSection({
         })
 
         SV:AddButton({
-            Name = "Hop Sever Low Players",
+            Name = "Entrar em Sever com pouco players",
             Callback = function()
                 _G.AutoRejoin = false
                 getgenv().AutoTeleport = true
@@ -5598,14 +5599,14 @@ local Section = SV:AddSection({
         })
 
 D:AddButton({
-    Name = "Random Fruits",
+    Name = "Girar Fruita",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Cousin","Buy")
       end    
 })
 
 D:AddToggle({
-    Name = "Auto Random Fruits",
+    Name = "Auto Girar frutas",
     Default = false,
     Flag = "Auto Random Fruits",
     Save = true,
@@ -5663,7 +5664,7 @@ FruitList = {
 }
 
 D:AddToggle({
-    Name = "Auto Store Fruits",
+    Name = "Auto guarda Fruits",
     Default = false,
     Flag = "Auto Store Fruits",
     Save = true,
@@ -8337,13 +8338,13 @@ pcall(function()
         if _G.AutoEliteHunter then
             if game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == true then
                 OrionLib:MakeNotification({
-                    Name = "Sla Hub(Noitification)",
+                    Name = "Galaxian Hub(Noitification)",
                     Content = "[EN] : Please cancel the farrm level quest (if any)",
                     Image = "rbxassetid://119980140458596",
                     Time = 9
                 })
                 OrionLib:MakeNotification({
-                    Name = "Sla Hub(Noitification)",
+                    Name = "Galaxian Hub(Noitification)",
                     Content = "[VN] : Làm ơn hủy nhiệm vụ farrm level(nếu có)",
                     Image = "rbxassetid://119980140458596",
                     Time = 9
