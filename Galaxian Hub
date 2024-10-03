@@ -2942,6 +2942,29 @@ if World2 and World1 then
     })
 end
 
+M:AddButton({
+Name = "Remover efeitos",
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local button = script.Parent
+
+local function removeEffects()
+    local character = player.Character or player.CharacterAdded:Wait()
+    local effect = character:FindFirstChild("EfeitoExemplo") 
+
+    if effect then
+        effect:Destroy()
+        print(player.Name .. " subiu de nível e o efeito foi removido!")
+    else
+        print("Efeito não encontrado.")
+    end
+end
+
+button.MouseButton1Click:Connect(function()
+    removeEffects()
+end)
+
+
     local Section = M:AddSection({
         Name = "Other Farm"
     })
